@@ -39,14 +39,18 @@ This gem makes no effort to cleanup stale assets. If using Dockerfile-based depl
 
 ## FAQ
 
-Q: My webserver or CDN automatically compresses assets. Do I need this?
+###### Q: My webserver or CDN automatically compresses assets. Do I need this?
+
 A: Possibly. Most on-the-fly compression will use lower compression levels to improve compression speed. Precompressing at a higher compression level will result in smaller files, faster downloads, and smaller bandwidth bills.
+
 Additionally, some webservers and CDNs limit which formats they will use to dynamically compress content. Precompressing may give you more control over this.
 
-Q: Does this compress dynamic content?
+###### Q: Does this compress dynamic content?
+
 A: No, just static assets that are precompiled as part of the asset pipeline.
 
-Q: Can I use this with Sprockets?
+###### Q: Can I use this with Sprockets?
+
 A: No, it's just for Propshaft.
 
 
